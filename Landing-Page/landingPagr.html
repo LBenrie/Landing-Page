@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <p>Header Logo</p>
+            <ul>
+                <li>header link one</li>
+                <li>header link two</li>
+                <li>header link three</li>
+            </ul>
+        </div>
+        <div class="top">
+            <div class="top1">
+                <h1>This Website is Awesome</h1>
+                <p>This website has some subtext that goes here under the main title. It is smaller font and 
+                    the color is lower contrast.
+                </p>
+                <button>Sing up</button>
+            </div>
+            <div class="top2">
+                <p>this is a placeholder for an image</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="one">
+            <h1>Some random information.</h1>
+            <div>
+                <div class="this">
+                    <div></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="this">
+                    <div></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>           
+                <div class="this">
+                    <div></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="this">
+                    <div></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <p class="quote">This is an inspiring quote, or a testimonial from a customer.
+                Maybe it is just filling up space, or maybe people will actually
+                read it. Who knows? All I know is that it looks nice.
+            </p>
+            <p class="by">-Thor, God of Thunder</p>
+        </div>
+        <div class="three">
+            <div>
+                <div class="one">
+                    <h5>Call to action! It is time!</h5>
+                    <p>Sing up for our product by clicking that button right over there!</p>
+                </div>
+                <button>Sing up</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>Copyright c The Odin Project</h4>
+    </footer>
+</body>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        padding: 0 auto;
+        margin: 0 auto;
+        width: 50%;
+        height: 100%;
+        
+    }
+    
+    header {
+        background-color: rgb(12, 35, 63);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 auto 30px auto;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu p{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .menu ul{
+        font-size: 12px;
+        list-style: none;
+        display: flex;
+    }
+
+    .menu li {
+        padding: 10px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px auto;
+        margin: 10px 20px 40px 20px;
+    }
+
+    .top1 {
+        width: 40%;
+        padding: 20px;
+        text-align: start;
+    }
+
+    .top2 {
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 40%;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .top2 p {
+        padding: 0;
+        margin:25% auto;
+    }
+
+    .top1 button {
+        background-color: rgb(13, 134, 220);
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        color: white;
+        font-weight: bold;
+        height: 30px;
+    }
+
+    main {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one div{
+        display: flex;
+        padding: 20px;
+    }
+
+    .one .this {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: rgb(35, 34, 34);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .this div {
+        padding: 00px;
+        width: 130px;
+        height: 130px;
+        border: 4px solid rgb(13, 134, 220);
+        border-radius: 5px;
+    }
+
+    .this p {
+        width: 130px;
+    }
+
+    .two {
+        background-color: rgb(230, 230, 230);
+        padding: 50px 140px;
+    }
+
+    .quote{
+        font-size: 30px;
+        text-align: justify;
+        font-style: italic;
+        color: rgb(58, 58, 58);
+        padding: 0;
+        margin: 0;
+    }
+
+    .by {
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+
+    .three {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .three div {
+        display: flex;
+        background-color: rgb(0, 115, 255);
+        padding: 20px 50px;
+        margin: 50px 120px;
+        border-radius: 10px;
+        color: white;
+        height: 100px;
+    }
+
+    .three .one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5px;
+        margin: 0 20px;
+    }
+
+    .three h5{
+        text-align: start;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .three p {
+        text-align: start;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .three button {
+        background-color: rgb(0, 115, 255);
+        border: 3px solid white;
+        border-radius: 5px;
+        padding: 0 20px;
+        align-self: center;
+        width: 120px;
+        height: 35px;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+
+    footer {
+        background-color: rgb(20, 62, 113);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: white;
+    }
+</style>
+</html>
